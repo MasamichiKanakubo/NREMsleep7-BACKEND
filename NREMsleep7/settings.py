@@ -31,7 +31,7 @@ env.read_env(os.path.join(BASE_DIR, ".env"))
 SECRET_KEY = 'django-insecure-91aee)6gy1!o&0g+-zo#g@x*nd02n3v)8yigpk&=8^x4*u3czv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'calendar_backend'
+    'calendar_backend',
+    'whitenoise',
 ]
 
 MIDDLEWARE = [
